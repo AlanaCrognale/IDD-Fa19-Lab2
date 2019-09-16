@@ -32,6 +32,7 @@ lcd.print("hello, world!"); to lcd.print("Alana!");
 
 **Upload a video of your working rotary encoder here.**
 
+![lowlymultimeter](https://github.com/AlanaCrognale/IDD-Fa19-Lab2/blob/master/Rotary%20Encoder.mov)
 
 ## Part D. Make your Arduino sing!
 
