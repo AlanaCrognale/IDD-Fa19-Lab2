@@ -37,12 +37,18 @@ lcd.print("hello, world!"); to lcd.print("Alana!");
 ## Part D. Make your Arduino sing!
 
 **a. How would you change the code to make the song play twice as fast?**
+
+Change 1000 to 500 in line "int noteDuration = 1000/noteDurations[thisNote];", halving each note duration
  
 **b. What song is playing?**
 
+Star Wars
 
 ## Part E. Make your own timer
 
 **a. Make a short video showing how your timer works, and what happens when time is up!**
 
+'Simon Says' esque game: First, the player turns the knob to represent how many light patterns to memorize (and how much time they will have to memorize).  Note that I have this set to max out at 100 such that if the knob is turned to any value greater than 100, the timer will reset back to 100.  Then, the player presses the yellow LED button to set the time and to begin the game.  The randomized pattern is then displayed, and once this is complete, the countdown begins.  At any point during this countdown, once the player feels like they have successfully memorized the pattern and is ready to re-enter, they can press the yellow LED button to signal that they are ready to enter the pattern, and then they will press each button in order coresponding to the pattern just displayed.  If the player never presses the yellow LED button to signal that they have the pattern memorized and are ready to play, the player loses the game once the timer reaches 0, and a 'losing' message is displayed on the screen along with a negative sounding descending C minor chord playing out of the speakers (![no time](https://github.com/AlanaCrognale/IDD-Fa19-Lab2/blob/master/no%20time.mov)).  If the player incorrectly enters the pattern, they lose the game, and a 'losing' message is displayed on the screen along with the same descending C minor chord (![wrong patter](https://github.com/AlanaCrognale/IDD-Fa19-Lab2/blob/master/wrong%20pattern.mov).  If the player correctly enters the pattern, they win the game, and a 'winning' message is displayed along with a positive sounding ascending C major chord (![won](https://github.com/AlanaCrognale/IDD-Fa19-Lab2/blob/master/won.mov)).
+
 **b. Post a link to the completed lab report your class hub GitHub repo.**
+![timer countdown](https://github.com/AlanaCrognale/IDD-Fa19-Lab2/blob/master/Timer_Countdown.ino) along with ![pitches.h](https://github.com/AlanaCrognale/IDD-Fa19-Lab2/blob/master/pitches.h)
